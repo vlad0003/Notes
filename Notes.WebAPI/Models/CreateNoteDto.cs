@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Notes.Application.Common.Mapping;
+﻿using Notes.Application.Common.Mapping;
 using Notes.Application.Notes.Commands.CreateNote;
 using AutoMapper;
 

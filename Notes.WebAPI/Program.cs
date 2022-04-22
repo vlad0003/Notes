@@ -1,12 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Notes.Application;
 using Notes.Persistence;
 
 namespace Notes.WebAPI
@@ -25,8 +20,8 @@ namespace Notes.WebAPI
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception exception)
-                { 
-                    
+                {
+                    throw new Exception(exception.ToString());
                 }
             }
 

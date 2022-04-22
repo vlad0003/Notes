@@ -39,7 +39,6 @@ namespace Notes.Test.Notes.Commands
 
             //Act
 
-
             //Assert
             await Assert.ThrowsAsync<NotFoundException>(async () =>
             await handler.Handle(
